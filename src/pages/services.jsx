@@ -186,7 +186,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
