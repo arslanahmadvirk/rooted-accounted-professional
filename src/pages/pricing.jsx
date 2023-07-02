@@ -12,7 +12,7 @@ export default function Pricing() {
       <div className="bg-white">
         <Navbar />
         <div className="py-20 bg-service relative h-96">
-          <div className="absolute top-0 left-0 h-full w-full bg-black/30 ">
+          <div className="absolute top-0 left-0 h-full w-full bg-black/30 px-5 ">
             <div className="max-w-6xl mx-auto mt-32 text-white">
               <h1 className=" font-black text-3xl mb-5">
                 OUR FLEXIBLE PRICING PLANS FOR YOU{" "}
@@ -30,7 +30,7 @@ export default function Pricing() {
           <h1 className="text-center font-bold text-3xl mb-12">
             PACKAGES & PRICING
           </h1>
-          <div className="grid grid-cols-3 grid-rows-1 max-w-5xl mx-auto gap-4">
+          <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 mx-5 max-w-5xl md:mx-auto gap-4">
             <div className="rounded-xl shadow-lg py-5">
               <div className="bg-[#8BBC4F] rounded-t-xl py-6">
                 <h1 className="font-extrabold text-2xl text-center ">
@@ -42,51 +42,150 @@ export default function Pricing() {
                   4500
                 </h1>
               </div>
-              <div className="my-10 px-10 border-b border-dashed border-gray-500">
-                <ul className="text-center flex flex-col gap-4">
-                  <li className="my-4">
-                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F] inline mr-5" />
-                    <span className="font-medium text-center">
+              <div className="h-64 border-b border-dashed border-gray-500">
+                <ul className="text-center flex flex-col gap-6 my-4">
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
                       Bookkeeping Service
-                    </span>
+                    </h6>
                   </li>
-                  <li className="my-4">
-                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F] inline mr-5" />
-                    <span className="font-medium text-center">
+                  <li className="flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
                       Statutory Service
-                    </span>
+                    </h6>
                   </li>
-                  <li className="my-4">
-                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F] inline mr-5" />
-                    <span className="font-medium text-center">
-                      Payroll upto 5 Employees
-                    </span>
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Payroll upto 5 employees
+                    </h6>
                   </li>
-                  <li className="my-4">
-                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F] inline mr-5" />
-                    <span className="font-medium text-center">
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
                       Taxation services companies upto R1 m turnover.
-                    </span>
+                    </h6>
                   </li>
                 </ul>
               </div>
               <div>
-                <ul className="text-center flex flex-col gap-4">
-                  <li className="my-4">
-                    <HiXMark className="w-6 h-6 fill-[#F80707] inline mr-5" />
-                    <span className="font-medium text-center">
+                <ul className="text-center flex flex-col gap-6 my-4 h-24">
+                  <li className=" flex w-64 mx-auto">
+                    <HiXMark className="w-6 h-6 fill-[#F80707]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
                       Accounting software fee of the companies choice
-                    </span>
+                    </h6>
                   </li>
-                  <li className="my-4">
-                    <HiXMark className="w-6 h-6 fill-[#F80707] inline mr-5" />
-                    <span className="font-medium text-center">
+                  <li className=" flex w-64 mx-auto">
+                    <HiXMark className="w-6 h-6 fill-[#F80707]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
                       Director’s personal taxes
-                    </span>
+                    </h6>
                   </li>
                 </ul>
               </div>
-              <button className="w-4/5 mx-auto py-2 block bg-lime-custom/80 rounded-lg text-white font-medium">
+              <button className="mt-12 w-4/5 mx-auto py-2 block bg-lime-custom/80 hover:bg-lime-custom rounded-lg text-white font-medium">
+                Get Started
+              </button>
+            </div>
+            <div className="rounded-xl shadow-lg py-5">
+              <div className="bg-[#8BBC4F] rounded-t-xl py-6">
+                <h1 className="font-extrabold text-2xl text-center ">
+                  VAT Business
+                </h1>
+                <br />
+                <h1 className="font-extrabold text-3xl text-center">
+                  <sup className="font-medium">R</sup>
+                  4500
+                </h1>
+              </div>
+              <div className="h-64 border-b border-dashed border-gray-500">
+                <ul className="text-center flex flex-col gap-6 my-4">
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Bookkeeping Service
+                    </h6>
+                  </li>
+                  <li className="flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Statutory Service
+                    </h6>
+                  </li>
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Payroll upto 5 employees
+                    </h6>
+                  </li>
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Taxation services applicable to companies.
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="text-center flex flex-col gap-6 my-4 h-24">
+                  <li className=" flex w-64 mx-auto">
+                    <HiXMark className="w-6 h-6 fill-[#F80707]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Accounting software fee of the companies choice
+                    </h6>
+                  </li>
+                  <li className=" flex w-64 mx-auto">
+                    <HiXMark className="w-6 h-6 fill-[#F80707]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Director’s personal taxes
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <button className="mt-12 w-4/5 mx-auto py-2 block bg-lime-custom/80 hover:bg-lime-custom rounded-lg text-white font-medium">
+                Get Started
+              </button>
+            </div>
+            <div className="rounded-xl shadow-lg py-5">
+              <div className="bg-[#8BBC4F] rounded-t-xl py-6">
+                <h1 className="font-extrabold text-2xl text-center ">
+                  Additional Services
+                </h1>
+                <br />
+                <h1 className="font-extrabold text-3xl text-center">
+                  <sup className="font-medium">R</sup>
+                  4500
+                </h1>
+              </div>
+              <div className="h-64 border-b border-dashed border-gray-500">
+                <ul className="text-center flex flex-col gap-6 my-4">
+                  <li className=" flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Once off of any of the services we offer
+                    </h6>
+                  </li>
+                  <li className="flex w-64 mx-auto">
+                    <AiOutlineCheck className="w-6 h-6 fill-[#8BBC4F]" />
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Personal income tax calculation & submission.
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="text-center flex flex-col gap-6 my-4 h-24">
+                  <li className=" flex w-64 mx-auto">
+                    <h6 className="font-medium text-center w-full mx-auto">
+                      Please enquire about the specific information we offer.
+                    </h6>
+                  </li>
+                </ul>
+              </div>
+              <button className="mt-12 w-4/5 mx-auto py-2 block bg-lime-custom/80 hover:bg-lime-custom rounded-lg text-white font-medium">
                 Get Started
               </button>
             </div>
@@ -121,7 +220,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

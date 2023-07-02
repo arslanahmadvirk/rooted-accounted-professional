@@ -12,7 +12,7 @@ export default function Navbar() {
   const closeMobileNav = () => {
     setIsMobileNavOpen(false);
   };
-  console.log(isMobileNavOpen);
+
   return (
     <nav className="py-4 text-custom-black">
       <div className="container flex items-center justify-between mx-auto lg:gap-0 gap-8 lg:px-10 px-5">
@@ -66,7 +66,7 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href={"/"}
+                href={"/services"}
                 onClick={closeMobileNav}
                 className="font-bold text-white text-2xl block text-center"
               >

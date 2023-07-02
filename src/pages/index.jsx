@@ -64,7 +64,7 @@ export default function Home() {
       <div className="py-20">
         <h1 className="text-center font-bold text-3xl mb-20">TESTIMONIALS</h1>
         <div className="py-20 bg-gradient-to-b from-[#8BBC4FA6] to-[#8BBC4F4D]">
-          <h1 className="text-center font-bold text-3xl mb-12">
+          <h1 className="text-center font-bold text-3xl mb-12 mx-5 md:mx-0">
             What People Say About us
           </h1>
           <Splide
