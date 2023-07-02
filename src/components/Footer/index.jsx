@@ -8,8 +8,8 @@ export default function Footer({}) {
   return (
     <div className="container mx-auto">
       <div className="max-w-6xl py-20 border-y-2 border-dashed border-gray-500 mx-auto px-5 lg:px-0">
-        <div className="grid lg:grid-cols-4 lg:grid-rows-1 grid-cols-2 grid-rows-3">
-          <div className="mb-8">
+        <div className="flex w-full justify-between flex-wrap">
+          <div className="mb-8 lg:w-1/4 w-full">
             <Image
               src={"/images/logo-green.svg"}
               height={88}
@@ -21,7 +21,7 @@ export default function Footer({}) {
               8437 San Carlos Street <br /> CapeTown, South Africa
             </p>
           </div>
-          <div>
+          <div className="lg:w-1/4 w-1/2">
             <h4 className="font-bold text-lg mb-6">Quick Links</h4>
             <ul className="flex flex-col gap-2 font-medium">
               <li>
@@ -35,7 +35,7 @@ export default function Footer({}) {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="lg:w-1/4 w-1/2">
             <h4 className="font-bold text-lg mb-6">Solutions</h4>
             <ul className="flex flex-col gap-2 font-medium">
               <li>
@@ -52,7 +52,7 @@ export default function Footer({}) {
               </li>
             </ul>
           </div>
-          <div className="lg:text-left text-center">
+          <div className="lg:text-left text-center lg:w-1/4 w-full lg:mt-0 mt-10">
             <h4 className="font-bold text-lg mb-6">Customer Support</h4>
             <ul className="flex flex-col gap-2 font-medium">
               <li>

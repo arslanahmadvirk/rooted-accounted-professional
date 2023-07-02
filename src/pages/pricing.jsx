@@ -3,7 +3,13 @@ import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 import { HiXMark } from "react-icons/hi2";
 import { AiOutlineCheck } from "react-icons/ai";
-import { MdOutlineCalendarMonth } from "react-icons/md";
+import { TbCalendarTime } from "react-icons/tb";
+import {
+  MdEmail,
+  MdOutlineCalendarMonth,
+  MdPhone,
+  MdPhoneEnabled,
+} from "react-icons/md";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 export default function Pricing() {
@@ -193,7 +199,7 @@ export default function Pricing() {
         </div>
 
         <div className="mb-20 max-w-5xl mx-auto">
-          <div className="bg-gradient-to-b from-[#8BBC4FA6] to-[#8BBC4F4D] rounded-2xl py-8 px-20 max-w-6xl mx-auto ">
+          <div className="bg-gradient-to-b from-[#8BBC4FA6] to-[#8BBC4F4D] rounded-2xl py-8 lg:px-20 px-10 max-w-6xl mx-auto ">
             <div className="mb-8">
               <MdOutlineCalendarMonth className="h-14 w-14 mx-auto mb-4" />
               <h1 className="text-3xl font-bold mb-4 text-center">
@@ -205,22 +211,50 @@ export default function Pricing() {
                 Call.
               </p>
             </div>
-            <div className="flex gap-4 max-w-sm mx-auto">
+            <div className="flex md:flex-row flex-col gap-4 max-w-lg mx-auto">
               <div>
                 <Image
                   src={"/images/user.png"}
                   height={161}
                   width={171}
                   alt="User"
-                  className="rounded-full object-cover"
+                  className="rounded-full object-cover mx-auto"
                 />
               </div>
-              <h1 className="font-bold text-xl">Lorem Ipsum</h1>
+              <div className="text-sm">
+                <h1 className="font-bold text-xl mb-4 md:text-left text-center">
+                  Lorem Ipsum
+                </h1>
+                <div className="flex items-center gap-4 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#8BBC4F] flex items-center justify-center">
+                    <MdPhone className="w-4 h-4 fill-white" />
+                  </div>
+                  <span className="font-medium">
+                    076 0933 475/ 071 392 3145
+                  </span>
+                </div>
+                <div className="flex items-center gap-4 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#8BBC4F] flex items-center justify-center">
+                    <MdEmail className="w-4 h-4 fill-white" />
+                  </div>
+                  <span className="font-medium">
+                    info@rootedaccountants.co.za
+                  </span>
+                </div>
+                <div className="flex items-center gap-4 mb-2">
+                  <div className="w-8 h-8 rounded-full bg-[#8BBC4F] flex items-center justify-center">
+                    <TbCalendarTime className="w-4 h-4 stroke-white" />
+                  </div>
+                  <span className="font-medium">
+                    Click here to schedule a meeting/call
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

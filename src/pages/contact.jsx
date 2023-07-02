@@ -13,7 +13,7 @@ export default function Contact() {
       </div>
       <div className="py-20 bg-contact  relative h-96">
         <div className="absolute top-0 left-0 h-full w-full bg-black/30 ">
-          <div className="max-w-6xl mx-auto mt-32 text-white font-medium px-8">
+          <div className="max-w-6xl mx-auto mt-32 text-white font-medium px-5">
             <h1 className=" font-black text-3xl mb-5">CONTACT US </h1>
             <p className=" mb-5">Get in Touch with Our Accounting Experts</p>
             <Link href={"/"}>HOME</Link>
